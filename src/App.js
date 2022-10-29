@@ -1,12 +1,19 @@
-import Inizio from "./lezioni/1-useState/inizio/1-errore-base";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Inizio from "./lezioni/11-React-Router/v6/inizio/index";
+
+import Nav from "./lezioni/11-React-Router/v6/inizio/Nav";
 
 function App() {
   return (
-    <div className="App">
-      <section className="container text-center my-3">
-        <Inizio />
-      </section>
-    </div>
+    <Router>
+      <div className="App">
+        <section className="container text-center my-3">
+          <Nav/>
+          <Inizio />
+        </section>
+      </div>
+    </Router>
   );
 }
 
